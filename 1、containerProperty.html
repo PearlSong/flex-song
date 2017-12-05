@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>容器属性</title>
+    <style>
+        .list{
+            display: flex;
+
+            /*flex-direction: row;*/
+            flex-direction: row-reverse;
+            /*flex-direction: column;*/
+            /*flex-direction: column-reverse;*/
+
+            flex-wrap: wrap;
+            /*flex-wrap: nowrap;*/
+            /*flex-wrap: wrap-reverse;*/
+
+            /*flex-flow:row nowrap; 默认值*/
+
+            /*justify-content: flex-start;*/
+            /*justify-content: flex-end;*/
+            /*justify-content: center;*/
+            /*justify-content: space-between;*/
+            justify-content: space-around;
+
+            /*align-items: flex-start;*/
+            /*align-items: flex-end;*/
+            /*align-items: center;*/
+            /*align-items: baseline;*/
+            align-items: stretch;
+
+            align-content: flex-start;
+            /*align-content: flex-end;*/
+            /*align-content: center;*/
+            /*align-content: space-between;*/
+            /*align-content: space-around;*/
+        }
+        .list div{
+            margin: 5px;
+            width: 200px;
+            height: 200px;
+            background-color: #c8e5bc;
+            order:1;
+            flex-grow: 1.5;
+            flex-shrink:2;
+            flex-basis: 220px;
+            flex:none;
+
+            /*align-self: auto;*/
+            /*align-self: flex-start;*/
+            /*align-self: flex-end;*/
+            /*align-self: center;*/
+            /*align-self: baseline;*/
+            align-self: stretch;
+
+        }
+    </style>
+</head>
+<body>
+<div class="content">
+    <div class="list">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+        <div>16</div>
+        <div>17</div>
+    </div>
+</div>
+</body>
+</html>
